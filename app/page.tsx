@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Career } from "@/components/career";
 
 export default function Home() {
   return (
@@ -53,6 +53,7 @@ export default function Home() {
         <div className="max-w-[1440px] min-h-[320px] flex flex-col px-16 py-8 text-[#111111] text-center">
           <p className="">CAREER</p>
           <p className="">Current Openings</p>
+          <Career />
         </div>
       </div>
       <div className="flex justify-center">
