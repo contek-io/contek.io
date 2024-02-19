@@ -1,4 +1,5 @@
 import { Career } from "@/components/career";
+import { Button } from "@/components/button";
 
 const Home = () => (
   <main className="flex flex-col">
@@ -13,6 +14,7 @@ const Home = () => (
             strategies 24/7 across major crypto markets without manual
             intervention.
           </p>
+          <Button>Get in touch</Button>
         </div>
         <div className="w-1/2">
           <iframe
