@@ -1,12 +1,12 @@
+import localFont from "next/font/local";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = localFont({ src: "../public/fonts/Figtree-Regular.ttf" });
 
 export const metadata: Metadata = {
   title: "Contek",
@@ -23,7 +23,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body className={font.className}>
         <Header />
         {children}
         <Footer />
