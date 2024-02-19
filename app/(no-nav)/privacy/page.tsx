@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const Privacy = () => (
-  <main>
+  <main className="flex justify-center">
     <div className="w-full max-w-[--contek-max-width] px-16 my-8">
       <p>Privacy</p>
     </div>

@@ -86,7 +86,7 @@ const Home = () => (
         <Button>Working at Contek</Button>
       </div>
     </div>
-    <div className="flex justify-center bg-[#ffffff]">
+    <div className="flex justify-center bg-[#F5F7F7]">
       <div className="max-w-[--contek-max-width] min-h-[320px] flex flex-col px-16 py-8 text-[#111111] text-center">
         <p className="">CAREER</p>
         <p className="">Current Openings</p>

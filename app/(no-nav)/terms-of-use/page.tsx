@@ -7,9 +7,9 @@ export const metadata: Metadata = {
 };
 
 const TermsOfUse = () => (
-  <main>
+  <main className="flex justify-center">
     <div className="w-full max-w-[--contek-max-width] px-16 my-8">
-      <p>Terms of use</p>
+      <p>Terms Of Use</p>
     </div>
   </main>
 );
