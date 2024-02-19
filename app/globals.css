@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --contek-max-width: 1920px;
+  --contek-max-width: 1440px;
 }
 
 /* @media (prefers-color-scheme: dark) {

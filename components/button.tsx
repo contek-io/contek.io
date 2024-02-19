@@ -1,6 +1,6 @@
 export const Button = ({ children }: { children?: React.ReactNode }) => (
   <div>
-    <button className="relative h-[56px] flex justify-center items-center pl-6 pr-14 bg-[#1EA665] rounded-full font-semibold text-lg text-ellipsis overflow-hidden">
+    <button className="relative h-[56px] flex justify-center items-center pl-6 pr-16 bg-[#1EA665] rounded-full font-semibold text-lg text-ellipsis overflow-hidden transition hover:opacity-80">
       {children}
       <span className="absolute w-10 h-10 flex flex justify-center items-center bg-[#FFF] top-2 right-2 rounded-full">
         <svg
@@ -13,7 +13,7 @@ export const Button = ({ children }: { children?: React.ReactNode }) => (
           <path
             d="M1 12L12 1M12 1H1M12 1V12"
             stroke="#101716"
-            stroke-width="2"
+            strokeWidth="2"
           />
         </svg>
       </span>
