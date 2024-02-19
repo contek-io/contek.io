@@ -6,7 +6,7 @@ import { Button } from "@/components/button";
 const Home = () => (
   <main className="flex flex-col">
     <div className="flex justify-center">
-      <div className="w-full max-w-[--contek-max-width] h-[732px] flex justify-between gap-24 px-16 my-8">
+      <div className="w-full max-w-[--contek-max-width] min-h-[calc(100vh-92px)] flex justify-between gap-24 px-16">
         <div className="w-1/2 flex flex-col justify-center gap-12">
           <p className="max-w-[624px] font-semibold text-[66px] leading-[72px]">
             Discovering Patterns in Crypto Markets

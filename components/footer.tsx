@@ -9,13 +9,15 @@ export const Footer = () => (
           <Image src="/logo.svg" alt="contek logo" width={132} height={26} />
         </div>
         <div className="mr-24">
-          <p>Contact</p>
-          <p>contact@contek.io</p>
-          <p>LinkedIn</p>
+          <p className="mb-4 text-[#A9ACAC]">Contact</p>
+          <p className="text-xl leading-[30px]">contact@contek.io</p>
+          <p className="text-xl leading-[30px]">LinkedIn</p>
         </div>
         <div className="max-w-[392px]">
-          <p>Office</p>
-          <p>Hysan Avenue, Causeway Bay, Hong Kong, 999077, CN</p>
+          <p className="mb-4 text-[#A9ACAC]">Office</p>
+          <p className="text-xl leading-[30px]">
+            Hysan Avenue, Causeway Bay, Hong Kong, 999077, CN
+          </p>
         </div>
       </div>
       <div className="flex justify-between text-sm">

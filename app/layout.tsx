@@ -15,22 +15,22 @@ export const metadata: Metadata = {
   keywords: ["contek", "crypto"],
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
-  return (
-    <html className="scroll-smooth" lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
-      <body className={font.className}>
-        <SpeedInsights />
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
-  );
-}
+}>) => (
+  <html className="scroll-smooth" lang="en">
+    <head>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+    </head>
+    <body className={font.className}>
+      <SpeedInsights />
+      <Header />
+      {children}
+      <Footer />
+    </body>
+  </html>
+);
+
+export default RootLayout;
