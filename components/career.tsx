@@ -47,6 +47,7 @@ export const Career = async () => {
     const res = await fetch(
       "https://aitable.ai/fusion/v1/datasheets/dst14mblDDGWNwp7eF/records?viewId=viwrLLFqSm7cM&fieldKey=name",
       {
+        next: { revalidate: 60 },
         headers: new Headers({
           Authorization: `Bearer ${process.env.APITABLE_API_TOKEN}`,
           "Content-Type": "application/json",
