@@ -3,10 +3,12 @@ import { Career } from "@/components/career";
 const Home = () => (
   <main className="flex flex-col">
     <div className="flex justify-center">
-      <div className="w-full max-w-[1440px] h-[732px] flex justify-between gap-24 px-16 py-8">
-        <div className="w-1/2 flex flex-col justify-center">
-          <p className="">Discovering Patterns in Crypto Markets</p>
-          <p className="">
+      <div className="w-full max-w-[--contek-max-width] h-[732px] flex justify-between gap-24 px-16 py-8">
+        <div className="w-1/2 flex flex-col justify-center gap-12">
+          <p className="max-w-[624px] font-semibold text-[66px] leading-[72px]">
+            Discovering Patterns in Crypto Markets
+          </p>
+          <p className="max-w-[496px] text-lg text-[#A9ACAC]">
             Contrarian Technology is a proprietary trading firm. We run quant
             strategies 24/7 across major crypto markets without manual
             intervention.
@@ -14,17 +16,17 @@ const Home = () => (
         </div>
         <div className="w-1/2">
           <iframe
-            className="border-none"
-            width="600"
-            height="600"
-            src="https://rive.app/s/GQdxTylvLUiszlcHclrZjw/embed"
             allowFullScreen
-          ></iframe>
+            className="border-none"
+            height="100%"
+            src="https://rive.app/s/GQdxTylvLUiszlcHclrZjw/embed"
+            width="100%"
+          />
         </div>
       </div>
     </div>
     <div className="flex justify-center bg-[#ffffff]">
-      <div className="max-w-[1440px] h-[680px] flex gap-24 px-16 py-8 text-[#111111]">
+      <div className="max-w-[--contek-max-width] h-[680px] flex gap-24 px-16 py-8 text-[#111111]">
         <div className="w-1/2">test</div>
         <div className="w-1/2 flex flex-col justify-center">
           <p className="">ABOUT</p>
@@ -57,14 +59,14 @@ const Home = () => (
       </div>
     </div>
     <div className="flex justify-center bg-[#ffffff]">
-      <div className="max-w-[1440px] min-h-[320px] flex flex-col px-16 py-8 text-[#111111] text-center">
+      <div className="max-w-[--contek-max-width] min-h-[320px] flex flex-col px-16 py-8 text-[#111111] text-center">
         <p className="">CAREER</p>
         <p className="">Current Openings</p>
         <Career />
       </div>
     </div>
     <div className="flex justify-center">
-      <div className="w-full max-w-[1440px] h-[500px] flex flex-col justify-center items-center px-16 py-8">
+      <div className="w-full max-w-[--contek-max-width] h-[500px] flex flex-col justify-center items-center px-16 py-8">
         <p className="">Get in touch</p>
         <p className="">contact@contek.io</p>
       </div>
