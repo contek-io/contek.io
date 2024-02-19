@@ -9,6 +9,8 @@ import "./globals.css";
 
 const font = localFont({ src: "../public/fonts/Figtree-Regular.ttf" });
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Contek",
   description: "Discovering Patterns in Crypto Markets",
