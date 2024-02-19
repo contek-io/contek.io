@@ -1,10 +1,12 @@
+import Image from "next/image";
+
 import { Career } from "@/components/career";
 import { Button } from "@/components/button";
 
 const Home = () => (
   <main className="flex flex-col">
     <div className="flex justify-center">
-      <div className="w-full max-w-[--contek-max-width] h-[732px] flex justify-between gap-24 px-16 py-8">
+      <div className="w-full max-w-[--contek-max-width] h-[732px] flex justify-between gap-24 px-16 my-8">
         <div className="w-1/2 flex flex-col justify-center gap-12">
           <p className="max-w-[624px] font-semibold text-[66px] leading-[72px]">
             Discovering Patterns in Crypto Markets
@@ -28,13 +30,16 @@ const Home = () => (
       </div>
     </div>
     <div className="flex justify-center bg-[#ffffff]">
-      <div className="max-w-[--contek-max-width] h-[680px] flex gap-24 px-16 py-8 text-[#111111]">
-        <div className="w-1/2">test</div>
+      <div className="max-w-[--contek-max-width] h-[680px] flex gap-24 px-16 text-[#111111]">
+        <div className="w-1/2">
+          <Image src="/about.png" alt="contek logo" width={752} height={680} />
+        </div>
         <div className="w-1/2 flex flex-col justify-center">
-          <p className="">ABOUT</p>
+          <p className="font-semibold text-[#1EA665] tracking-wider">ABOUT</p>
           <p className="">
-            We are a proprietary trading firm, leveraging on technology to
-            provide liquidity to the market.
+            We are a{" "}
+            <span className="text-[#1EA665]">proprietary trading firm</span>,
+            leveraging on technology to provide liquidity to the market.
           </p>
           <p className="">
             Our scientists bring rigorous inquiry, data analysis, and invention
