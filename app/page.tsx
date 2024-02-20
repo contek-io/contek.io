@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import { Button } from '@/components/button';
-import { Career } from '@/components/career';
+import { CareerContainer } from '@/components/career/career-container';
 
 const Home = () => (
   <main className="flex flex-col">
@@ -79,11 +79,11 @@ const Home = () => (
         <Button>Working at Contek</Button>
       </div>
     </div>
-    <div className="flex justify-center bg-[#F5F7F7]">
+    <div className="flex justify-center py-16 bg-[#F5F7F7]">
       <div className="max-w-[--contek-max-width] min-h-[320px] flex flex-col px-16 py-8 text-[#111111] text-center">
-        <p className="">CAREER</p>
-        <p className="">Current Openings</p>
-        <Career />
+        <p className="mb-4 font-semibold text-[#1EA665] tracking-wider">CAREER</p>
+        <p className="font-medium text-[64px] leading-[80px]">Current Openings</p>
+        <CareerContainer />
       </div>
     </div>
     <div className="flex justify-center" id="contact">
