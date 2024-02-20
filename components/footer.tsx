@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export const Footer = () => (
   <footer className="flex justify-center">
@@ -21,18 +21,12 @@ export const Footer = () => (
         </div>
       </div>
       <div className="flex justify-between text-sm">
-        <div className="text-sm text-[#646B69]">
-          © 2024 Contek, Ltd All rights reserved
-        </div>
+        <div className="text-sm text-[#646B69]">© 2024 Contek, Ltd All rights reserved</div>
         <nav className="flex gap-4 text-sm text-[#A9ACAC] transition">
           <Link className="hover:opacity-80" href="/privacy" target="_blank">
             Privacy
           </Link>
-          <Link
-            className="hover:opacity-80"
-            href="/terms-of-use"
-            target="_blank"
-          >
+          <Link className="hover:opacity-80" href="/terms-of-use" target="_blank">
             Terms of use
           </Link>
         </nav>

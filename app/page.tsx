@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import { Career } from "@/components/career";
-import { Button } from "@/components/button";
+import { Button } from '@/components/button';
+import { Career } from '@/components/career';
 
 const Home = () => (
   <main className="flex flex-col">
@@ -12,9 +12,8 @@ const Home = () => (
             Discovering Patterns in Crypto Markets
           </p>
           <p className="max-w-[496px] text-lg text-[#A9ACAC]">
-            Contrarian Technology is a proprietary trading firm. We run quant
-            strategies 24/7 across major crypto markets without manual
-            intervention.
+            Contrarian Technology is a proprietary trading firm. We run quant strategies 24/7 across
+            major crypto markets without manual intervention.
           </p>
           <Button>Get in touch</Button>
         </div>
@@ -37,18 +36,15 @@ const Home = () => (
         <div className="w-1/2 flex flex-col justify-center gap-4">
           <p className="font-semibold text-[#1EA665] tracking-wider">ABOUT</p>
           <p className="font-medium text-[42px] leading-[52px]">
-            We are a{" "}
-            <span className="text-[#1EA665]">proprietary trading firm</span>,
-            leveraging on technology to provide liquidity to the market.
+            We are a <span className="text-[#1EA665]">proprietary trading firm</span>, leveraging on
+            technology to provide liquidity to the market.
           </p>
           <p className="text-lg text-[#656F6E]">
-            Our scientists bring rigorous inquiry, data analysis, and invention
-            to solve the toughest challenges and build up our own trading
-            strategies.
+            Our scientists bring rigorous inquiry, data analysis, and invention to solve the
+            toughest challenges and build up our own trading strategies.
           </p>
           <p className="text-lg text-[#656F6E]">
-            Our trading is based on our own models, using our own capital and
-            done at our own risk.
+            Our trading is based on our own models, using our own capital and done at our own risk.
           </p>
         </div>
       </div>
@@ -74,14 +70,11 @@ const Home = () => (
           />
         </div>
         <p className="font-semibold text-[#1EA665] tracking-wider">JOIN US</p>
-        <p className="font-medium text-[64px] leading-[70px]">
-          Strength in numbers
-        </p>
+        <p className="font-medium text-[64px] leading-[70px]">Strength in numbers</p>
         <p className="text-lg text-[#A9ACAC]">
-          We employ motivated and highly talented individuals who want to work
-          at the leading edge of investment management in an open and supportive
-          environment. Our firm&apos;s culture is characterised by
-          collaboration, intellectual integrity, and methodological rigour.
+          We employ motivated and highly talented individuals who want to work at the leading edge
+          of investment management in an open and supportive environment. Our firm&apos;s culture is
+          characterised by collaboration, intellectual integrity, and methodological rigour.
         </p>
         <Button>Working at Contek</Button>
       </div>
@@ -96,9 +89,7 @@ const Home = () => (
     <div className="flex justify-center" id="contact">
       <div className="w-full max-w-[--contek-max-width] h-[500px] flex flex-col justify-center items-center px-16 py-8">
         <p className="font-medium text-[28px] leading-[34px]">Get in touch</p>
-        <p className="font-medium text-[104px] leading-[128px] text-[#1EA665]">
-          contact@contek.io
-        </p>
+        <p className="font-medium text-[104px] leading-[128px] text-[#1EA665]">contact@contek.io</p>
       </div>
     </div>
   </main>

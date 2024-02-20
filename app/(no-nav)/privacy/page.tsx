@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Contek - Privacy",
-  description: "Contek Privacy",
-  keywords: ["contek", "crypto", "privacy"],
+  title: 'Contek - Privacy',
+  description: 'Contek Privacy',
+  keywords: ['contek', 'crypto', 'privacy'],
 };
 
 const Privacy = () => (

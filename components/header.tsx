@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export const Header = () => {
   const pathname = usePathname();
@@ -13,7 +13,7 @@ export const Header = () => {
         <Link href="/">
           <Image src="/logo.svg" alt="contek logo" width={132} height={26} />
         </Link>
-        {pathname === "/" && (
+        {pathname === '/' && (
           <nav className="flex gap-8 font-medium text-lg text-[#A9ACAC] transition">
             <Link className="hover:opacity-80" href="#about-us">
               About us
