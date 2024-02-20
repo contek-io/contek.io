@@ -1,4 +1,6 @@
-import { Button } from "./button";
+import { APITABLE_URL } from '@/consts/url';
+
+import { Button } from './button';
 
 type JobsResponse = {
   data: {
@@ -20,9 +22,7 @@ const Job = ({ job }: { job: JobRecord }) => (
   <div className="flex flex-col gap-8 p-10 bg-[#FFF] text-left">
     <div className="flex justify-between">
       <div className="flex flex-col gap-5">
-        <p className="font-medium text-[28px] leading-[34px]">
-          {job.fields.title}
-        </p>
+        <p className="font-medium text-[28px] leading-[34px]">{job.fields.title}</p>
         <div className="flex gap-2">
           {job.fields.tag.map((_tag) => (
             <span
@@ -44,27 +44,23 @@ const Job = ({ job }: { job: JobRecord }) => (
 
 export const Career = async () => {
   try {
-    const res = await fetch(
-      "https://aitable.ai/fusion/v1/datasheets/dst14mblDDGWNwp7eF/records?viewId=viwrLLFqSm7cM&fieldKey=name",
-      {
-        next: { revalidate: 60 },
-        headers: new Headers({
-          Authorization: `Bearer ${process.env.APITABLE_API_TOKEN}`,
-          "Content-Type": "application/json",
-        }),
-      }
-    );
+    const res = await fetch(APITABLE_URL, {
+      next: { revalidate: 60 },
+      headers: new Headers({
+        Authorization: `Bearer ${process.env.APITABLE_API_TOKEN}`,
+        'Content-Type': 'application/json',
+      }),
+    });
     const data: JobsResponse = await res.json();
     const records = data?.data?.records;
 
     if (!Array.isArray(records)) {
-      console.error("Records are not array");
+      console.error('Records are not array');
       throw new Error();
     }
 
     const jobs = records.filter(
-      (_record) =>
-        _record?.fields.title || _record.fields.jd || _record.fields.tag
+      (_record) => _record?.fields.title || _record.fields.jd || _record.fields.tag,
     );
 
     return (

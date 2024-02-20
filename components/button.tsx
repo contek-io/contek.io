@@ -10,11 +10,7 @@ export const Button = ({ children }: { children?: React.ReactNode }) => (
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-            d="M1 12L12 1M12 1H1M12 1V12"
-            stroke="#101716"
-            strokeWidth="2"
-          />
+          <path d="M1 12L12 1M12 1H1M12 1V12" stroke="#101716" strokeWidth="2" />
         </svg>
       </span>
     </button>
