@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { CONTEK_INQUIRY_EMAIL } from '@/consts/url';
+
 export const Footer = () => (
   <footer className="flex justify-center">
     <div className="w-full max-w-[--contek-max-width] px-16 py-8">
@@ -12,7 +14,7 @@ export const Footer = () => (
         </div>
         <div className="mr-24">
           <p className="mb-4 text-[#A9ACAC]">Contact</p>
-          <p className="text-xl leading-[30px]">contact@contek.io</p>
+          <p className="text-xl leading-[30px]">{CONTEK_INQUIRY_EMAIL}</p>
           <p className="text-xl leading-[30px]">LinkedIn</p>
         </div>
         <div className="max-w-[392px]">
