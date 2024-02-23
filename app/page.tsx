@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import { Button } from '@/components/button';
 import { CareerContainer } from '@/components/career/career-container';
+import { CONTEK_INQUIRY_EMAIL } from '@/consts/url';
 
 const Home = () => (
   <main className="flex flex-col">
@@ -92,7 +93,9 @@ const Home = () => (
     <div className="flex justify-center" id="contact">
       <div className="w-full max-w-[--contek-max-width] h-[500px] flex flex-col justify-center items-center px-16 py-8">
         <p className="font-medium text-[28px] leading-[34px]">Get in touch</p>
-        <p className="font-medium text-[104px] leading-[128px] text-[#1EA665]">contact@contek.io</p>
+        <p className="font-medium text-[104px] leading-[128px] text-[#1EA665]">
+          {CONTEK_INQUIRY_EMAIL}
+        </p>
       </div>
     </div>
   </main>
