@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+import { CONTEK_LINKEDIN_URL } from '@/consts/url';
+
 export const Header = () => {
   const pathname = usePathname();
 
@@ -24,11 +26,7 @@ export const Header = () => {
             <Link className="hover:opacity-80" href="#contact">
               Contact
             </Link>
-            <Link
-              className="relative hover:opacity-80"
-              href="https://www.linkedin.com/company/contek/"
-              target="_blank"
-            >
+            <Link className="relative hover:opacity-80" href={CONTEK_LINKEDIN_URL} target="_blank">
               LinkedIn
               <span className="absolute -right-2 top-0">
                 <svg
