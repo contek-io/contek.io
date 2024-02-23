@@ -6,7 +6,9 @@ export const Footer = () => (
     <div className="w-full max-w-[--contek-max-width] px-16 py-8">
       <div className="flex mb-16">
         <div className="w-1/2">
-          <Image src="/logo.svg" alt="contek logo" width={132} height={26} />
+          <Link href="/">
+            <Image src="/logo.svg" alt="contek logo" width={132} height={26} />
+          </Link>
         </div>
         <div className="mr-24">
           <p className="mb-4 text-[#A9ACAC]">Contact</p>
