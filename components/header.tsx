@@ -25,11 +25,27 @@ export const Header = () => {
               Contact
             </Link>
             <Link
-              className="hover:opacity-80"
+              className="relative hover:opacity-80"
               href="https://www.linkedin.com/company/contek/"
               target="_blank"
             >
               LinkedIn
+              <span className="absolute -right-2 top-0">
+                <svg
+                  width="8"
+                  height="8"
+                  viewBox="0 0 8 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M5.2929 2H1.00001V1H7.00001V7H6.00001V2.70711L1.35356 7.35355L0.646454 6.64645L5.2929 2Z"
+                    fill="#343635"
+                  />
+                </svg>
+              </span>
             </Link>
           </nav>
         )}
