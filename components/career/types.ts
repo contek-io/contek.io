@@ -12,6 +12,7 @@ export type JobRecord = {
     jd: string;
     type: JobTypes;
     lang: string;
+    requirements: string;
   };
 };
 
