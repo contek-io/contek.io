@@ -13,7 +13,7 @@ const font = localFont({ src: '../public/fonts/Figtree-Regular.ttf' });
 export const runtime = 'edge';
 
 export const metadata: Metadata = {
-  title: 'Contek',
+  title: 'Contek - Discovering Patterns in Crypto Markets',
   description: 'Discovering Patterns in Crypto Markets',
   keywords: ['contek', 'crypto'],
 };
