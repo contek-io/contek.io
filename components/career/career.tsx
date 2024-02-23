@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useMemo, useState } from 'react';
 
 import { cn } from '@/utils/classnames';
@@ -24,7 +25,11 @@ const Job = ({ job }: { job: JobRecord }) => (
         </div>
       </div>
       <div className="flex justify-end grow">
-        <Button>Apply</Button>
+        <div>
+          <Link href={`/career/${job.recordId}`} target="_blank">
+            <Button>Apply</Button>
+          </Link>
+        </div>
       </div>
     </div>
     <p className="max-w-[70%] text-lg text-[#656F6E]">{job.fields.jd}</p>

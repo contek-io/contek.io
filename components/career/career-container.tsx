@@ -1,11 +1,11 @@
-import { APITABLE_URL } from '@/consts/url';
+import { APITABLE_RECORD_URL } from '@/consts/url';
 
 import { Career } from './career';
 import type { JobsResponse } from './types';
 
 export const CareerContainer = async () => {
   try {
-    const res = await fetch(APITABLE_URL, {
+    const res = await fetch(`${APITABLE_RECORD_URL}&fields=title,jd,tag,type`, {
       next: { revalidate: 60 },
       headers: new Headers({
         Authorization: `Bearer ${process.env.APITABLE_API_TOKEN}`,
