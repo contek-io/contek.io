@@ -1,20 +1,15 @@
-export type JobsResponse = {
-  data: {
-    records: JobRecord[];
-  };
-};
+import { APITableRecord, APITableResponse } from '@/types/response';
 
-export type JobRecord = {
-  recordId: string;
-  fields: {
-    title: string;
-    tag: string[];
-    jd: string;
-    type: JobTypes;
-    lang: string;
-    requirements: string;
-  };
-};
+export type JobsResponse = APITableResponse<JobRecord[]>;
+
+export type JobRecord = APITableRecord<{
+  title: string;
+  tag: string[];
+  jd: string;
+  type: JobTypes;
+  lang: string;
+  requirements: string;
+}>;
 
 export enum JobTypes {
   All = 'All Jobs',
