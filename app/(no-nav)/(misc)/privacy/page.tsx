@@ -46,7 +46,7 @@ const Privacy = async () => {
     );
   } catch (error) {
     console.error(error);
-    return <p>Failed to load careers, try to refresh page</p>;
+    return <p>Failed to load privacy, try to refresh page</p>;
   }
 };
 
