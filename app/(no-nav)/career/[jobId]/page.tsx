@@ -4,7 +4,7 @@ import Markdown from 'react-markdown';
 
 import { Button } from '@/components/button';
 import { JobsResponse } from '@/components/career/types';
-import { APITABLE_RECORD_URL } from '@/consts/url';
+import { APITABLE_CAREER_URL } from '@/consts/url';
 import { APPLY_FORM_URL } from '@/consts/url';
 
 type Props = {
@@ -12,7 +12,7 @@ type Props = {
 };
 
 const getJobDetails = async (jobId: string) => {
-  const res = await fetch(`${APITABLE_RECORD_URL}&fields=requirements,title`, {
+  const res = await fetch(`${APITABLE_CAREER_URL}&fields=requirements,title`, {
     next: { revalidate: 60 },
     headers: new Headers({
       Authorization: `Bearer ${process.env.APITABLE_API_TOKEN}`,
