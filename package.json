@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=20.10.0"
   },
   "packageManager": "pnpm@8.15.4",
   "scripts": {
-    "dev": "next dev",
+    "dev": "PORT=3009 next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "PORT=3010 next start",
     "lint": "next lint",
     "format": "prettier --write \"app/**/*.{ts,tsx}\" \"components/**/*.{ts,tsx}\" \"consts/**/*.{ts,tsx}\"",
     "prepare": "husky"
