@@ -4,11 +4,16 @@
 
 :root {
   --contek-max-width: 1440px;
+
+  --contek-padding-x-desktop: 64px;
+  --contek-padding-x-laptop: 40px;
+  --contek-padding-x-tablet: 64px;
+  --contek-padding-x-mobile: 16px;
 }
 
 /* @media (prefers-color-scheme: dark) {
   :root {
-    
+
   }
 } */
 

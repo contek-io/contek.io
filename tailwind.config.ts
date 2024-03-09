@@ -9,7 +9,10 @@ const config: Config = {
   theme: {
     extend: {},
     screens: {
-      lg: '992px',
+      mobile: '375px',
+      tablet: '768px',
+      laptop: '992px',
+      desktop: '1440px',
     },
   },
   darkMode: 'class',
