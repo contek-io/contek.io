@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Markdown from 'react-markdown';
 
+import { Container } from '@/components/layout/container';
 import { APITABLE_MISC_URL } from '@/consts/url';
 
 import { MiscResponse } from '../types';
@@ -37,11 +38,11 @@ const TermsOfUse = async () => {
 
     return (
       <div className="w-full bg-white">
-        <div className="tablet:px-[--contek-padding-x-tablet] laptop:px-[--contek-padding-x-laptop] desktop:px-[--contek-padding-x-desktop] mx-auto min-h-[calc(100vh-92px)] max-w-[--contek-max-width] px-[--contek-padding-x-mobile] py-8">
+        <Container className="min-h-[calc(100vh-92px)]">
           <div className="prose mb-4 max-w-full">
             <Markdown>{termsOfUse?.fields?.content}</Markdown>
           </div>
-        </div>
+        </Container>
       </div>
     );
   } catch (error) {

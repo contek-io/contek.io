@@ -4,12 +4,13 @@ import Markdown from 'react-markdown';
 
 import { Button } from '@/components/button';
 import { JobsResponse } from '@/components/career/types';
+import { Container } from '@/components/layout/container';
 import { APITABLE_CAREER_URL } from '@/consts/url';
 import { APPLY_FORM_URL } from '@/consts/url';
 
-type Props = {
+interface IGenerateMetadata {
   params: { jobId: string };
-};
+}
 
 const getJobDetails = async (jobId: string) => {
   const res = await fetch(`${APITABLE_CAREER_URL}&fields=requirements,title`, {
@@ -32,7 +33,7 @@ const getJobDetails = async (jobId: string) => {
   return job;
 };
 
-export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
+export const generateMetadata = async ({ params }: IGenerateMetadata): Promise<Metadata> => {
   const job = await getJobDetails(params.jobId);
 
   return {
@@ -40,20 +41,20 @@ export const generateMetadata = async ({ params }: Props): Promise<Metadata> => 
   };
 };
 
-const JobDetails = async ({ params }: Props) => {
+const JobDetails = async ({ params }: IGenerateMetadata) => {
   try {
     const job = await getJobDetails(params.jobId);
 
     return (
       <div className="w-full bg-white">
-        <div className="tablet:px-[--contek-padding-x-tablet] laptop:px-[--contek-padding-x-laptop] desktop:px-[--contek-padding-x-desktop] mx-auto min-h-[calc(100vh-92px)] max-w-[--contek-max-width] px-[--contek-padding-x-mobile] py-8">
+        <Container className="min-h-[calc(100vh-92px)]">
           <div className="prose mb-4 max-w-full">
             <Markdown>{job?.fields?.requirements}</Markdown>
           </div>
           <Link className="hover:opacity-80" href={APPLY_FORM_URL} target="_blank">
             <Button>Apply</Button>
           </Link>
-        </div>
+        </Container>
       </div>
     );
   } catch (error) {
