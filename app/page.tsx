@@ -3,35 +3,34 @@ import Link from 'next/link';
 
 import { Button } from '@/components/button';
 import { CareerContainer } from '@/components/career/career-container';
+import { Container } from '@/components/layout/container';
 import { CONTEK_INQUIRY_EMAIL } from '@/consts/url';
 
 const Home = () => (
-  <main className="">
-    <div className="">
-      <div className="tablet:px-[--contek-padding-x-tablet] laptop:px-[--contek-padding-x-laptop] desktop:px-[--contek-padding-x-desktop] laptop:min-h-[calc(100vh-92px)] mx-auto flex w-full max-w-[--contek-max-width] justify-between px-[--contek-padding-x-mobile]">
-        <div className="laptop:max-w-[530px] desktop:max-w-[624px] flex grow flex-col justify-center gap-12">
-          <p className="desktop:text-[66px] desktop:leading-[72px] laptop:text-[56px] laptop:leading-[62px] font-semibold">
-            Discovering Patterns in Crypto Markets
-          </p>
-          <p className="desktop:text-lg max-w-[496px] text-[#A9ACAC]">
-            Contrarian Technology is a proprietary trading firm. We run quant strategies 24/7 across
-            major crypto markets without manual intervention.
-          </p>
-          <Link href="#contact">
-            <Button>Get in touch</Button>
-          </Link>
-        </div>
-        <div className="laptop:min-w-[318px] max-w-[480px] grow">
-          <iframe
-            allowFullScreen
-            className="border-none"
-            height="100%"
-            src="https://rive.app/s/GQdxTylvLUiszlcHclrZjw/embed"
-            width="100%"
-          />
-        </div>
+  <main>
+    <Container className="flex min-h-[calc(100vh-92px)] justify-between">
+      <div className="laptop:max-w-[530px] desktop:max-w-[624px] flex grow flex-col justify-center gap-12">
+        <p className="desktop:text-[66px] desktop:leading-[72px] laptop:text-[56px] laptop:leading-[62px] font-semibold">
+          Discovering Patterns in Crypto Markets
+        </p>
+        <p className="desktop:text-lg max-w-[496px] text-[#A9ACAC]">
+          Contrarian Technology is a proprietary trading firm. We run quant strategies 24/7 across
+          major crypto markets without manual intervention.
+        </p>
+        <Link href="#contact">
+          <Button>Get in touch</Button>
+        </Link>
       </div>
-    </div>
+      <div className="laptop:min-w-[318px] max-w-[480px] grow">
+        <iframe
+          allowFullScreen
+          className="border-none"
+          height="100%"
+          src="https://rive.app/s/GQdxTylvLUiszlcHclrZjw/embed"
+          width="100%"
+        />
+      </div>
+    </Container>
 
     <div className="flex justify-center bg-[#ffffff]" id="about-us">
       <div className="flex h-[680px] max-w-[--contek-max-width] gap-24 px-16 text-[#111111]">

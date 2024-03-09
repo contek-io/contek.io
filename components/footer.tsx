@@ -3,9 +3,11 @@ import Link from 'next/link';
 
 import { CONTEK_INQUIRY_EMAIL, CONTEK_LINKEDIN_URL } from '@/consts/url';
 
+import { Container } from './layout/container';
+
 export const Footer = () => (
   <footer>
-    <div className="tablet:px-[--contek-padding-x-tablet] laptop:px-[--contek-padding-x-laptop] desktop:px-[--contek-padding-x-desktop] mx-auto w-full max-w-[--contek-max-width] px-[--contek-padding-x-mobile] py-8">
+    <Container>
       <div className="mb-16 flex">
         <div className="w-1/2">
           <Link href="/">
@@ -30,6 +32,7 @@ export const Footer = () => (
           </p>
         </div>
       </div>
+
       <div className="flex justify-between text-sm">
         <div className="text-sm text-[#646B69]">© 2024 Contek, Ltd All rights reserved</div>
         <nav className="flex gap-4 text-sm text-[#A9ACAC] transition">
@@ -41,6 +44,6 @@ export const Footer = () => (
           </Link>
         </nav>
       </div>
-    </div>
+    </Container>
   </footer>
 );

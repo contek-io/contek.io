@@ -6,12 +6,14 @@ import { usePathname } from 'next/navigation';
 
 import { CONTEK_LINKEDIN_URL } from '@/consts/url';
 
+import { Container } from './layout/container';
+
 export const Header = () => {
   const pathname = usePathname();
 
   return (
     <header>
-      <div className="tablet:px-[--contek-padding-x-tablet] laptop:px-[--contek-padding-x-laptop] desktop:px-[--contek-padding-x-desktop] mx-auto flex w-full max-w-[--contek-max-width] justify-between px-[--contek-padding-x-mobile] py-8">
+      <Container className="flex justify-between">
         <Link href="/">
           <Image src="/logo.svg" alt="contek logo" width={132} height={26} />
         </Link>
@@ -47,7 +49,7 @@ export const Header = () => {
             </Link>
           </nav>
         )}
-      </div>
+      </Container>
     </header>
   );
 };
