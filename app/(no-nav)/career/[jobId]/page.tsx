@@ -46,8 +46,8 @@ const JobDetails = async ({ params }: Props) => {
 
     return (
       <div className="w-full bg-white">
-        <div className="max-w-[--contek-max-width] min-h-[calc(100vh-92px)] mx-auto px-16 py-8">
-          <div className="max-w-full mb-4 prose">
+        <div className="tablet:px-[--contek-padding-x-tablet] laptop:px-[--contek-padding-x-laptop] desktop:px-[--contek-padding-x-desktop] mx-auto min-h-[calc(100vh-92px)] max-w-[--contek-max-width] px-[--contek-padding-x-mobile] py-8">
+          <div className="prose mb-4 max-w-full">
             <Markdown>{job?.fields?.requirements}</Markdown>
           </div>
           <Link className="hover:opacity-80" href={APPLY_FORM_URL} target="_blank">
