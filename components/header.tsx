@@ -10,13 +10,13 @@ export const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="h-[92px] flex justify-center">
-      <div className="w-full max-w-[--contek-max-width] flex justify-between px-16 py-8">
+    <header>
+      <div className="tablet:px-[--contek-padding-x-tablet] laptop:px-[--contek-padding-x-laptop] desktop:px-[--contek-padding-x-desktop] mx-auto flex w-full max-w-[--contek-max-width] justify-between px-[--contek-padding-x-mobile] py-8">
         <Link href="/">
           <Image src="/logo.svg" alt="contek logo" width={132} height={26} />
         </Link>
         {pathname === '/' && (
-          <nav className="flex gap-8 font-medium text-lg text-[#A9ACAC] transition">
+          <nav className="flex gap-8 text-lg font-medium text-[#A9ACAC] transition">
             <Link className="hover:opacity-80" href="#about-us">
               About us
             </Link>

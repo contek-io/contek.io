@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { CONTEK_INQUIRY_EMAIL, CONTEK_LINKEDIN_URL } from '@/consts/url';
 
 export const Footer = () => (
-  <footer className="flex justify-center">
-    <div className="w-full max-w-[--contek-max-width] px-16 py-8">
-      <div className="flex mb-16">
+  <footer>
+    <div className="tablet:px-[--contek-padding-x-tablet] laptop:px-[--contek-padding-x-laptop] desktop:px-[--contek-padding-x-desktop] mx-auto w-full max-w-[--contek-max-width] px-[--contek-padding-x-mobile] py-8">
+      <div className="mb-16 flex">
         <div className="w-1/2">
           <Link href="/">
             <Image src="/logo.svg" alt="contek logo" width={132} height={26} />
