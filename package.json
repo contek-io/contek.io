@@ -5,7 +5,7 @@
   "engines": {
     "node": ">=20.10.0"
   },
-  "packageManager": "pnpm@8.15.4",
+  "packageManager": "pnpm@8.15.5",
   "scripts": {
     "dev": "PORT=3009 next dev",
     "build": "next build",
