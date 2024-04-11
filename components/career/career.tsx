@@ -27,7 +27,7 @@ const Job = ({ job }: { job: JobRecord }) => (
       <div className="hidden grow justify-end laptop:flex">
         <div>
           <Link href={`/career/${job.recordId}`} target="_blank">
-            <Button>Apply</Button>
+            <Button>Details</Button>
           </Link>
         </div>
       </div>
@@ -35,7 +35,7 @@ const Job = ({ job }: { job: JobRecord }) => (
     <p className="text-base text-[#656F6E] laptop:max-w-[70%] laptop:text-lg">{job.fields.jd}</p>
     <div className="laptop:hidden">
       <Link href={`/career/${job.recordId}`} target="_blank">
-        <Button>Apply</Button>
+        <Button>Details</Button>
       </Link>
     </div>
   </div>
