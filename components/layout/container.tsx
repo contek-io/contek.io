@@ -8,7 +8,7 @@ interface IContainer {
 export const Container = ({ children, className }: IContainer) => (
   <div
     className={cn([
-      'tablet:px-[--contek-padding-x-tablet] laptop:px-[--contek-padding-x-laptop] desktop:px-[--contek-padding-x-desktop] mx-auto w-full max-w-[--contek-max-width] px-[--contek-padding-x-mobile] py-8',
+      'mx-auto w-full max-w-[--contek-max-width-laptop] px-[--contek-padding-x-mobile] py-8 tablet:px-[--contek-padding-x-tablet] laptop:px-[--contek-padding-x-laptop] desktop:max-w-[--contek-max-width] desktop:px-[--contek-padding-x-desktop]',
       className,
     ])}
   >
