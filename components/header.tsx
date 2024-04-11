@@ -13,7 +13,7 @@ export const Header = () => {
 
   return (
     <header>
-      <Container className="flex justify-between">
+      <Container className="flex max-w-[--contek-max-width] justify-between">
         <Link href="/">
           <Image src="/logo.svg" alt="contek logo" width={132} height={26} />
         </Link>

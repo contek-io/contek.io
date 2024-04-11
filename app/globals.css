@@ -4,6 +4,7 @@
 
 :root {
   --contek-max-width: 1440px;
+  --contek-max-width-laptop: 1200px;
 
   --contek-padding-x-desktop: 64px;
   --contek-padding-x-laptop: 40px;
