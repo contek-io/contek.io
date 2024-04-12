@@ -8,9 +8,9 @@ import { CONTEK_INQUIRY_EMAIL } from '@/consts/url';
 
 const Home = () => (
   <main>
-    <Container className="flex min-h-[calc(100vh-92px)] justify-between">
+    <Container className="flex min-h-[calc(100vh-92px)] flex-col-reverse justify-between tablet:flex-row">
       <div className="flex grow flex-col justify-center gap-12 tablet:max-w-[384px] laptop:max-w-[530px] desktop:max-w-[624px]">
-        <p className="font-semibold tablet:text-[48px] tablet:leading-[52px] laptop:text-[56px] laptop:leading-[62px] desktop:text-[66px] desktop:leading-[72px]">
+        <p className="text-[48px] font-semibold leading-[52px] laptop:text-[56px] laptop:leading-[62px] desktop:text-[66px] desktop:leading-[72px]">
           Discovering Patterns in Crypto Markets
         </p>
         <p className="max-w-[496px] text-base text-[#A9ACAC] desktop:text-lg">
@@ -24,7 +24,7 @@ const Home = () => (
       <div className="max-w-[480px] grow laptop:min-w-[318px]">
         <iframe
           allowFullScreen
-          className="border-none"
+          className="min-h-[280px] border-none tablet:h-auto"
           height="100%"
           src="https://rive.app/s/GQdxTylvLUiszlcHclrZjw/embed"
           width="100%"
@@ -33,7 +33,7 @@ const Home = () => (
     </Container>
 
     <div className="flex justify-center bg-[#ffffff]" id="about-us">
-      <div className="flex h-auto max-w-[--contek-max-width] flex-col-reverse gap-24 px-16 py-16 text-[#111111] laptop:h-[680px] laptop:flex-row laptop:py-0">
+      <div className="flex h-auto max-w-[--contek-max-width] flex-col-reverse gap-8 px-[--contek-padding-x-mobile] py-16 text-[#111111] tablet:gap-24 tablet:px-16 laptop:h-[680px] laptop:flex-row laptop:py-0">
         <div className="flex w-full items-center justify-center laptop:w-1/2">
           <Image src="/about.png" alt="contek logo" width={752} height={680} />
         </div>
@@ -41,7 +41,7 @@ const Home = () => (
           <p className="text-sm font-semibold leading-[22px] tracking-wider text-[#1EA665]">
             ABOUT
           </p>
-          <p className="font-medium tablet:text-[32px] tablet:leading-[40px] desktop:text-[42px] desktop:leading-[52px]">
+          <p className="text-[32px] font-medium leading-[40px] desktop:text-[42px] desktop:leading-[52px]">
             We are a <span className="text-[#1EA665]">proprietary trading firm</span>, leveraging on
             technology to provide liquidity to the market.
           </p>
@@ -57,20 +57,20 @@ const Home = () => (
     </div>
 
     <div className="relative">
-      <div className="mx-auto flex h-[460px] w-full max-w-[608px] flex-col items-center justify-center gap-4 overflow-hidden text-center laptop:h-[680px]">
-        <div className="absolute -z-[1] h-full tablet:-left-40 laptop:left-0">
+      <div className="mx-auto flex h-auto w-full max-w-[608px] flex-col items-center justify-center gap-4 overflow-hidden px-[--contek-padding-x-mobile] py-32 text-center tablet:h-[460px] tablet:px-0 tablet:py-0 tablet:py-64 laptop:h-[680px]">
+        <div className="absolute top-[calc(-0.5*100vw+50px)] -z-[1] w-full overflow-hidden tablet:-left-40 tablet:top-auto tablet:h-full tablet:w-auto laptop:left-0">
           <iframe
             allowFullScreen
-            className="border-none"
+            className="h-[100vw] w-screen rotate-90 border-none tablet:h-full tablet:w-[520px] tablet:rotate-0"
             height="680"
             src="https://rive.app/s/iExBZC5AD0eYrA1Lcrq-Sg/embed"
             width="520"
           />
         </div>
-        <div className="absolute -z-[1] h-full tablet:-right-40 laptop:right-0">
+        <div className="absolute bottom-[calc(-0.5*100vw+50px)] -z-[1] w-full overflow-hidden tablet:-right-40 tablet:bottom-auto tablet:h-full tablet:w-auto laptop:right-0">
           <iframe
             allowFullScreen
-            className="border-none"
+            className="h-[100vw] w-screen rotate-90 border-none tablet:h-full tablet:w-[520px] tablet:rotate-0"
             height="680"
             src="https://rive.app/s/66ulUv9FeEmdjtx74YK9Rg/embed"
             width="520"
@@ -79,7 +79,7 @@ const Home = () => (
         <p className="text-sm font-semibold leading-[22px] tracking-wider text-[#1EA665]">
           JOIN US
         </p>
-        <p className="font-medium laptop:text-[56px] laptop:leading-[62px] desktop:text-[64px] desktop:leading-[70px]">
+        <p className="text-[48px] font-medium leading-[52px] laptop:text-[56px] laptop:leading-[62px] desktop:text-[64px] desktop:leading-[70px]">
           Strength in numbers
         </p>
         <p className="mb-4 text-lg text-[#A9ACAC]">
@@ -92,17 +92,19 @@ const Home = () => (
     </div>
 
     <div className="flex justify-center bg-[#F5F7F7] py-16" id="career">
-      <div className="flex min-h-[320px] max-w-[--contek-max-width] flex-col px-16 py-8 text-center text-[#111111]">
+      <div className="flex min-h-[320px] max-w-[--contek-max-width] flex-col px-[--contek-padding-x-mobile] py-8 text-center text-[#111111] tablet:px-16">
         <p className="mb-4 font-semibold tracking-wider text-[#1EA665]">CAREER</p>
-        <p className="text-[64px] font-medium leading-[80px]">Current Openings</p>
+        <p className="text-[48px] font-medium leading-[60px] tablet:text-[64px] tablet:leading-[80px]">
+          Current Openings
+        </p>
         <CareerContainer />
       </div>
     </div>
 
     <div className="flex justify-center" id="contact">
-      <div className="flex w-full max-w-[--contek-max-width] flex-col items-center justify-center gap-4 px-16 py-16 laptop:h-[500px] laptop:gap-0 laptop:py-8">
+      <div className="flex w-full max-w-[--contek-max-width] flex-col items-center justify-center gap-4 px-[--contek-padding-x-mobile] py-16 tablet:px-16 laptop:h-[500px] laptop:gap-0 laptop:py-8">
         <p className="text-[28px] font-medium leading-[34px]">Get in touch</p>
-        <p className="font-medium text-[#1EA665] tablet:text-[64px] tablet:leading-[80px] laptop:text-[104px] laptop:leading-[128px]">
+        <p className="text-[40px] font-medium leading-[50px] text-[#1EA665] tablet:text-[64px] tablet:leading-[80px] laptop:text-[104px] laptop:leading-[128px]">
           {CONTEK_INQUIRY_EMAIL}
         </p>
       </div>
