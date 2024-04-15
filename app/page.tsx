@@ -21,10 +21,10 @@ const Home = () => (
           <Button>Get in touch</Button>
         </Link>
       </div>
-      <div className="max-w-[480px] grow laptop:min-w-[318px]">
+      <div className="tablet:max-w-[480px] grow laptop:min-w-[318px]">
         <iframe
           allowFullScreen
-          className="min-h-[280px] border-none tablet:h-auto"
+          className="min-h-[280px] border-none tablet:h-full"
           height="100%"
           src="https://rive.app/s/GQdxTylvLUiszlcHclrZjw/embed"
           width="100%"
